@@ -11,3 +11,8 @@ body {
     --text-color-gray-light: #CFCFCF;
 
 }
+
+body {
+    width: 100vw;
+    height: 90vh;
+}

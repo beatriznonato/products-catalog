@@ -1,0 +1,35 @@
+.home__container {
+    display: inline;
+}
+
+.home__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 68px;
+    background-color: var(--primary-color);
+}
+
+.home__logo {
+    width: 121px;
+    height: 40px;
+    margin: 14px 0px 0px 25px;
+}
+
+.home__button {
+    border: 1px solid var(--third-color);
+    border-radius: 1.5rem;
+    background-color: var(--primary-color);
+    margin: 10px 25px 10px 0px;
+    padding: 12px;
+}
+
+.home__button--tex {
+    color: var(--third-color);
+    font-size: 14px;
+    text-align: center;
+}
+
+.home__title {
+    color: var(--primary-color);
+}
