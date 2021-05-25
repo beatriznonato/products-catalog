@@ -25,11 +25,36 @@
 }
 
 .home__button--tex {
-    color: var(--third-color);
     font-size: 14px;
     text-align: center;
+    color: var(--third-color);
 }
 
 .home__title {
+    top: 80px;
+    left: 500px;
+    right: 300px;
+    position: absolute;
     color: var(--primary-color);
+}
+
+.main__img {
+    width: 100%;
+    /* height: 600px; */
+    position: relative;
+}
+
+@media screen and (max-width: 568px) {
+    .main__img {
+        position: relative;
+    }
+
+    .home__title {
+        top: 70px;
+        left: 5px;
+        right: 15px;
+        position: absolute;
+        text-align: center;
+        color: var(--primary-color);
+    }
 }
