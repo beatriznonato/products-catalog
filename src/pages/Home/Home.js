@@ -9,8 +9,8 @@ const Home = () => {
                     <button className="home__button home__button--tex">ENTRAR</button>
                 </header>
             <main>
-                <img className="main__img" src="https://t4.ftcdn.net/jpg/04/30/30/71/240_F_430307155_zitxBFe8nvvUfc45pbIcHR3AvMrMm39b.jpg"/>
-                <h1 className="home__title">Bebidas geladas a preço de mercado na sua casa agora</h1>
+                <img className="main__img" src="https://images5.alphacoders.com/326/326180.jpg"/>
+                <h1 className="home__title"><b>Bebidas geladas</b> a <b>preço</b> de mercado na sua casa <b>agora</b></h1>
             </main>
         </div>
     )
