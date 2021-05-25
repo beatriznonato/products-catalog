@@ -3,4 +3,11 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+
+    --primary-color: #333333;
+    --second-color: #FFFFFF;
+    --third-color: #F4BF33;
+    --border-color-outline: #999999;
+    --text-color-gray-light: #CFCFCF;
+
 }
