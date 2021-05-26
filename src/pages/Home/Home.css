@@ -1,5 +1,6 @@
 .home__container {
-    display: inline;
+    display: inline-block;
+    width: 100%;
 }
 
 .home__header {
@@ -15,34 +16,26 @@
 }
 
 .home__title {
-    width: 32%;
-    top: 6rem;
-    left: 28rem;
-    position: absolute;
+    width: 35%;
+    margin-top: 4rem;
+    margin-left: 28rem;
     font-weight: normal;
     font-size: 2rem;
-    text-align: center;
     color: var(--primary-color);
-}
-
-.main__img {
-    width: 100%;
-    position: relative;
 }
 
 @media screen and (max-width: 1024px) {
     .home__title {
         width: 55%;
-        top: 6rem;
-        left: 9rem;
+        margin-left: 12rem;
     }
 }
 
 @media screen and (max-width: 568px) {
     .home__title {
         width: 90%;
-        top: 4rem;
-        left: 1rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
         font-size: 2rem;
     }
 }
