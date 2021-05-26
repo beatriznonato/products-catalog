@@ -1,8 +1,8 @@
 import React from 'react';
-import './Footer.css'
 import twitter from '../../assets/image/twitter.png'
 import facebook from '../../assets/image/facebook.png'
 import instagram from '../../assets/image/instagram.png'
+import './Footer.css'
 
 const Footer = () => {
     return (
