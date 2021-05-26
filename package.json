@@ -37,6 +37,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "cz-conventional-changelog": "^3.3.0",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
     "husky": "^6.0.0",
     "style-loader": "^2.0.0",
