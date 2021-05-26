@@ -1,6 +1,6 @@
-.home__title {
+.section__h1 {
     width: 35%;
-    margin-top: 4rem;
+    margin-top: 7rem;
     margin-left: 28rem;
     font-weight: normal;
     font-size: 2rem;
@@ -8,14 +8,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .home__title {
+    .section__h1 {
         width: 55%;
+        margin-top: 18rem;;
         margin-left: 12rem;
     }
 }
 
 @media screen and (max-width: 568px) {
-    .home__title {
+    .section__h1 {
         width: 90%;
         margin-top: 1rem;
         margin-left: 2rem;

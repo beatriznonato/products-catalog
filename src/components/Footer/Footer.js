@@ -14,13 +14,13 @@ const Footer = () => {
                      </figure>
                     <div className="footer__container--socialnetworks">
                         <a href="https://twitter.com/ZeDelivery">
-                            <img src={twitter} />
+                            <img src={twitter} alt="Logo Twitter" />
                         </a>
                         <a href="https://www.facebook.com/zedeliverydebebidas">
-                            <img src={facebook} />
+                            <img src={facebook} alt="Logo Facebook" />
                         </a>
                         <a href="https://www.instagram.com/zedelivery/?hl=pt">
-                            <img src={instagram} />
+                            <img src={instagram} alt="Logo Instagram" />
                         </a>
                     </div>
                 </div>

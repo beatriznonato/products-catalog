@@ -1,0 +1,39 @@
+.input__container {
+    border: 1px solid var(--border-color-outline);
+    border-radius: 0.5rem;
+    width: 38%;
+    margin-left: 24rem;
+    padding: 12px 48px;
+    position:relative;
+    outline: none;
+}
+
+.input__img {
+    position:absolute;
+    right: 54.8rem;
+    top: 18.8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .input__container {
+        width: 54%;
+        margin-left: 9rem;
+    }
+
+    .input__img {
+        right: 36.5rem;
+        top: 29.8rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .input__container {
+        width: 58%;
+        margin-left: 1rem;
+    }
+
+    .input__img {
+        right: 17rem;
+        top: 15.5rem;
+    }
+}

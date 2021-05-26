@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import Input from '../../components/Input/Input'
 import './Home.css'
 
 const Home = () => {
@@ -8,8 +9,9 @@ const Home = () => {
         <div>
             <Header />
             <main>
-                <section>
-                    <h1 className="home__title"><b>Bebidas geladas</b> a <b>preço</b> de mercado na sua casa <b>agora</b></h1>
+                <section className="section">
+                    <h1 className="section__h1"><b>Bebidas geladas</b> a <b>preço</b> de mercado na sua casa <b>agora</b></h1>
+                    <Input />
                 </section>
             </main>
             <Footer />
