@@ -18,7 +18,7 @@
 @media screen and (max-width: 568px) {
     .section__h1 {
         width: 90%;
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-left: 2rem;
         font-size: 2rem;
     }
