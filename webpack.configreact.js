@@ -2,10 +2,16 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  // entry: ['babel-polyfill', './src/App.js'],
+  // entry: {
+  //   "app": "./src/App.js"
+  // },
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
+    path: path.join(__dirname, 'dist'),
+    filename: "[name].js",
+    sourceMapFilename: "[name].js.map"
   },
+  devtool: "source-map",
   resolve: {
     modules: [path.join(__dirname, 'src'), 'node_modules'],
     alias: {
@@ -38,7 +44,7 @@ module.exports = {
             loader: 'file-loader',
             options: {}
         }]
-      },
+      }
     ],
   },
   plugins: [

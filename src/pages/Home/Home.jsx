@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer'
 import Input from '../../components/Input/Input'
 import './Home.css'
 
-const Home = () => {
+function Home() {
     return (
         <div>
             <Header />
