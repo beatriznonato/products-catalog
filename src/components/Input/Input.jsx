@@ -8,7 +8,7 @@ function Input() {
     const [address, setAddress] = useState('')
 
     const zeApi = async () => {
-        const resultZe = await axios.post("https://api.code-challenge.ze.delivery/public/graphql", {
+        const resultZe = await axios.post(client, {
             query: `
             query pocSearchMethod($now: DateTime!, $algorithm: String!, $lat: String!, $long: String!) {
                 pocSearch(now: $now, algorithm: $algorithm, lat: $lat, long: $long) {
