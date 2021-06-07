@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import client from '../../service/api'
 import location from '../../assets/image/location.png'
 import './Input.css'
 

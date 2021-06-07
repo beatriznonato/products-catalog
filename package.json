@@ -10,13 +10,12 @@
   "author": "Beatriz Nonato",
   "license": "ISC",
   "dependencies": {
-    "@apollo/client": "^3.3.19",
     "axios": "^0.21.1",
     "graphql": "^15.5.0",
     "react": "^17.0.2",
+    "react-app-polyfill": "2.0.0",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-app-polyfill": "2.0.0"
+    "react-scripts": "4.0.3"
   },
   "husky": {
     "hooks": {
