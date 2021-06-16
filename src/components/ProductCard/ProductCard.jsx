@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './ProductCard.css'
 
 function ProductCard() {
   const [data, setData] = useState({})
@@ -38,10 +39,11 @@ function ProductCard() {
     return <span> tô carregando...</span>
   }
   return(
-    <div>
-      <img src={data.data.poc.products[0].images[0].url} />
-      <h3>{data.data.poc.products[0].title}</h3>
-      <p>R$ {data.data.poc.products[0].productVariants[0].price}</p>
+    <div className="card__container">
+      <img className="card__img" src={data.data.poc.products[0].images[0].url} />
+      <hr />
+      <h3 className="card__title">{data.data.poc.products[0].title}</h3>
+      <p className="card__p">R$ {data.data.poc.products[0].productVariants[0].price}</p>
     </div>
   )
 

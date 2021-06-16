@@ -1,0 +1,25 @@
+.card__container {
+    border: 1px solid var(--border-color-outline);
+    border-radius: 0.5rem;
+    width: 12%;
+    margin-left: 3rem;
+    margin-top: 3.5rem;
+    padding: 12px 20px;
+    outline: none;
+}
+
+.card__img {
+    width: 60%;
+    margin-top: 0.5rem;
+}
+
+.card__title {
+    font-size: 0.9rem;
+    color: var(--text-color-gray-light);
+}
+
+.card__p {
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: var(--primary-color); 
+}
