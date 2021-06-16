@@ -1,41 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import { useLocation } from 'react-router-dom'
+import { getProducts } from '../../services/products';
 import './ProductCardList.css'
 
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
+
 function ProductCard() {
-  const [data, setData] = useState({})
+  const [products, setProducts] = useState({})
+
+  let query = useQuery();
 
   useEffect(async () => {
-    const productsDetail = await axios.post("https://api.code-challenge.ze.delivery/public/graphql", {
-      query: `
-      query poc($id: ID!, $categoryId: Int, $search: String){
-          poc(id: $id) {
-            id
-            products(categoryId: $categoryId, search: $search) {
-              id
-              title
-              images {
-                url
-              }
-              productVariants {
-                price
-                subtitle
-              }
-            }
-          }
-        }
-      `,
-      variables: {
-          id: "532",
-          search: "",
-          categoryId: null
-      }
-    })
-    setData(productsDetail.data)
-    console.log(data)
+    setProducts(await getProducts(query.get('id')))
   }, [])
 
-  if(!data.data) {
+  if(!products.length) {
     return <span> tô carregando...</span>
   }
   
@@ -52,7 +33,7 @@ function ProductCard() {
 
   return <>
   {
-    data.data.poc.products.map(renderProduct)
+    products.map(renderProduct)
   }
   </>
 
