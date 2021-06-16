@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/Header/Header'
-import ProductCard from '../../components/ProductCard/ProductCard';
+import ProductCardList from '../../components/ProductCardList/ProductCardList';
 import Footer from '../../components/Footer/Footer'
 
 function Products() {
@@ -8,7 +8,7 @@ function Products() {
         <div>
             <Header />
             <main>
-                <ProductCard />
+                <ProductCardList />
             </main>
             <Footer />
         </div>

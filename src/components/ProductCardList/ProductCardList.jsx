@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './ProductCard.css'
+import './ProductCardList.css'
 
 function ProductCard() {
   const [data, setData] = useState({})
@@ -38,14 +38,23 @@ function ProductCard() {
   if(!data.data) {
     return <span> tô carregando...</span>
   }
-  return(
-    <div className="card__container">
-      <img className="card__img" src={data.data.poc.products[0].images[0].url} />
-      <hr />
-      <h3 className="card__title">{data.data.poc.products[0].title}</h3>
-      <p className="card__p">R$ {data.data.poc.products[0].productVariants[0].price}</p>
-    </div>
-  )
+  
+  const renderProduct = (product) => {
+    return (
+      <div className="card__container">
+        <img className="card__img" src={product.images[0].url} />
+        <hr />
+        <h3 className="card__title">{product.title}</h3>
+        <p className="card__p">R$ {product.productVariants[0].price}</p>
+      </div>
+    )
+  }
+
+  return <>
+  {
+    data.data.poc.products.map(renderProduct)
+  }
+  </>
 
 }
 
