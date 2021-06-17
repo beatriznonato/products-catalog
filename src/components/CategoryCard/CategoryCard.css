@@ -1,5 +1,5 @@
-.card__container {
-    border: 1px solid var(--border-color-outline);
+.product__item {
+    border: 1px solid var(--third-color);
     border-radius: 0.5rem;
     width: 12%;
     margin-left: 3rem;
@@ -8,18 +8,23 @@
     outline: none;
 }
 
-.card__img {
+.product__img {
     width: 60%;
     margin-top: 0.5rem;
 }
 
-.card__title {
+.product__title {
     font-size: 0.9rem;
-    color: var(--text-color-gray-light);
+    color: var(--third-color);
 }
 
-.card__p {
+.product__p {
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 14px;
     color: var(--primary-color); 
+}
+
+.product__item__container {
+    display: flex;
+    margin-bottom: 50px;
 }

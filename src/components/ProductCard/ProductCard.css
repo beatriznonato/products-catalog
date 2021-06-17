@@ -1,0 +1,30 @@
+.product__item {
+    border: 1px solid var(--third-color);
+    border-radius: 0.5rem;
+    width: 12%;
+    margin-left: 3rem;
+    margin-top: 3.5rem;
+    padding: 12px 20px;
+    outline: none;
+}
+
+.product__img {
+    width: 60%;
+    margin-top: 0.5rem;
+}
+
+.product__title {
+    font-size: 0.9rem;
+    color: var(--third-color);
+}
+
+.product__p {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--primary-color); 
+}
+
+.product__item__container {
+    display: flex;
+    margin-bottom: 50px;
+}
