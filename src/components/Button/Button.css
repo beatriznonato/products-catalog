@@ -1,0 +1,13 @@
+.button__button {
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+    color: var(--third-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button__button:hover {
+    background-color: var(--button-color);
+    color: var(--second-color);
+}

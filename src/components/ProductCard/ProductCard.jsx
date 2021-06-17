@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button'
 import './ProductCard.css'
 
 
@@ -9,7 +10,11 @@ function ProductCard({ product }) {
       <hr className="product__hr" />
       <h3 className="product__title">{product.title}</h3>
       <p className="product__p">R$ {product.productVariants[0].price}</p>
-    </div>   
+      <div className="product__button">   
+        <Button />
+        <Button />
+      </div>
+    </div>
   )
 }
 

@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 110px;
-    padding: 20px;
-    margin-right: 30px;
+    max-width: 150px;
+    padding: 10px;
+    margin-right: 10px;
     border-radius: 0.5rem;
     border: 1px solid var(--third-color);
     outline: none;
@@ -32,4 +32,9 @@
     font-size: 14px;
     font-weight: bold;
     color: var(--primary-color); 
+}
+
+.product__button {
+    display: flex;
+    justify-content: space-between;
 }
