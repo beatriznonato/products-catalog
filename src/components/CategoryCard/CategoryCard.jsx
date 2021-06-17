@@ -45,7 +45,7 @@ function CategoryCard() {
   }, [products]);
 
   if(!products.length) {
-    return <span> tô carregando...</span>
+    return <span>carregando...</span>
   }
 
   return <>
@@ -55,9 +55,9 @@ function CategoryCard() {
         const arrProducts = filteredProducts[category];
 
         return (
-          <div className="category__item">
+          <div className="category__container">
             <h1 className="category__title">{category}</h1>
-            <div className="product__item__container">
+            <div className="category__container--products">
               {
                 arrProducts.map((product, index) => {
                     if (index > 6) return <></>;

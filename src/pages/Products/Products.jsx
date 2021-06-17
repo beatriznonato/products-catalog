@@ -7,7 +7,7 @@ function Products() {
     return (
         <div>
             <Header />
-            <main>
+            <main className="main__main">
                 <CategoryCard />
             </main>
             <Footer />
