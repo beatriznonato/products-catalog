@@ -6,12 +6,20 @@ body {
 
     --primary-color: #333333;
     --second-color: #FFFFFF;
-    --third-color: #F4BF33;
-    --border-color-outline: #999999;
-    --text-color-gray-light: #CFCFCF;
+    --third-color: #999999;
+    --button-color: #F4BF33;
 }
 
 body {
-    width: 100vw;
-    height: 90vh;
+    height: 100vh;
+}
+#root {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    background: none;
 }

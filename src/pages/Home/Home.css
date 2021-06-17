@@ -1,25 +1,27 @@
+.section__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section__h1 {
-    width: 35%;
-    margin-top: 7rem;
-    margin-left: 28rem;
+    max-width: 500px;
+    text-align: center;
     font-weight: normal;
     font-size: 2rem;
     color: var(--primary-color);
+ 
 }
 
 @media screen and (max-width: 1024px) {
     .section__h1 {
-        width: 55%;
-        margin-top: 18rem;
-        margin-left: 12rem;
+        font-size: 30px;
     }
 }
 
 @media screen and (max-width: 568px) {
     .section__h1 {
-        width: 90%;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        font-size: 2rem;
+        font-size: 20px;
     }
 }

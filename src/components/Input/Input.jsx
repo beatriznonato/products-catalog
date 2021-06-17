@@ -20,17 +20,17 @@ function Input() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="input">
+        <form onSubmit={handleSubmit} className="form__form">
+            <button className="form__button">
+                <img className="form__button--img" src={location} alt="icone localização" />
+            </button>
             <input 
-             className="input__container" 
+             className="form__input" 
              placeholder="Insira endereço para ver preço" 
              type="string"
              value={address}
              onChange={e => setAddress(e.target.value)}
             />
-            <button>
-                <img className="input__img" src={location} alt="icone localização" />
-            </button>
         </form>
     )
 }
