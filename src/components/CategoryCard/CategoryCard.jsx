@@ -50,24 +50,23 @@ function CategoryCard() {
 
   return <>
    {
-     Object.keys(filteredProducts).length && 
-      Object.keys(filteredProducts).map(category => {
-        const arrProducts = filteredProducts[category];
+    Object.keys(filteredProducts).map(category => {
+      const arrProducts = filteredProducts[category];
 
-        return (
-          <div className="category__container">
-            <h1 className="category__title">{category}</h1>
-            <div className="category__container--products">
-              {
-                arrProducts.map((product, index) => {
-                    if (index > 6) return <></>;
-                    return <ProductCard product={product} />
-                })
-              }
-            </div>
+      return (
+        <div className="category__container">
+          <h1 className="category__title">{category}</h1>
+          <div className="category__container--products">
+            {
+              arrProducts.map((product, index) => {
+                if (index > 6) return <></>;
+                return <ProductCard product={product} />
+              })
+            }
           </div>
-        )
-      })
+        </div>
+      )
+    })
    }
   </>
 }
