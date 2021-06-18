@@ -3,9 +3,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    max-width: 150px;
+    max-width: 130px;
+    min-width: 130px;
     padding: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     border-radius: 0.5rem;
     border: 1px solid var(--third-color);
     outline: none;
