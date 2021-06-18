@@ -1,4 +1,6 @@
 .header__background {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--primary-color);
     padding: 12px 12px;
 }
@@ -7,4 +9,11 @@
     width: 100%;
     max-width: 121px;
     height: 40px;
+}
+
+.header__p--count {
+    margin: auto;
+    font-weight: bold;
+    color: var(--button-color);
+    text-align: end;
 }
