@@ -1,0 +1,56 @@
+.button__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.button__quantity--container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.button__quantity {
+    border: 1px solid var(--button-color);
+    border-radius: 100%;
+    color: var(--third-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+.button__value--input {
+    width: 30px;
+    color: var(--third-color);
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 14px;
+    border: 0;
+    outline: none;
+    text-align: center;
+}
+
+.button__value--input::-webkit-outer-spin-button,
+.button__value--input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.button__value--input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.button__buy {
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+    color: var(--third-color);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button__buy:hover, .button__quantity:hover {
+    background-color: var(--button-color);
+    color: var(--second-color);
+}
