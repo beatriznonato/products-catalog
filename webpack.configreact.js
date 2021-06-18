@@ -1,51 +1,53 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const isDevelopment = process.env.NODE_ENV !== "production";
+
 
 module.exports = {
+  mode: isDevelopment ? "development" : "production",
+  entry: path.resolve(__dirname, "src", "index.jsx"),
   output: {
-    path: path.join(__dirname, 'dist'),
-    filename: "[name].js",
-    sourceMapFilename: "[name].js.map"
+    path: path.resolve(__dirname, "dist")
   },
-  devtool: "source-map",
   resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules'],
-    alias: {
-      react: path.join(__dirname, 'node_modules', 'react'),
-    },
+    extensions: [".js", ".jsx"],
   },
+  devServer: {
+    contentBase: path.resolve(__dirname, "public"),
+    hot: true,
+  },
+  plugins: [
+   new HtmlWebpackPlugin({
+      template: __dirname + '/public/index.html',
+      filename: 'index.html',
+      inject: 'body'
+    }),
+  ].filter(Boolean),
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.jsx$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
+          options: {
+        
+          },
         },
       },
       {
-        test: /\.css$/,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
+            loader: 'file-loader',
           },
         ],
       },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [{
-            loader: 'file-loader',
-            options: {}
-        }]
-      }
-    ],
+    ]
   },
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: './public/index.html',
-    }),
-  ],
 };
