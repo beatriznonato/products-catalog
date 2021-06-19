@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
 import { getProducts } from '../../services/products';
-import ProductCard from '../ProductCard/ProductCard'
+import ProductCard from '../ProductCard/ProductCard';
+import Loader from '../Loader/Loader'
 import './CategoryCard.css'
 
 function useQuery() {
@@ -41,13 +42,13 @@ function CategoryCard() {
 
     delete productsObj["null"]
 
-    setFilteredProducts(productsObj)
+    setTimeout(() => setFilteredProducts(productsObj), 1500)
   }, [products]);
 
-  if(!products.length) {
-    return <span>carregando...</span>
+  if(!Object.keys(filteredProducts).length) {
+    return <Loader loading={true} />
   }
-
+  
   return <>
    {
     Object.keys(filteredProducts).map(category => {
