@@ -1,22 +1,32 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
 import { searchNearest, googleMaps } from '../../services/searchStore';
+import Loader from '../Loader/Loader'
 import location from '../../assets/image/location.png'
 import './InputAddress.css'
 
 function InputAddress() {
     const [address, setAddress] = useState('')
+    const [loading, setLoading] = useState(false)
 
     const history = useHistory();
     
     const handleSubmit = async (event) => {
         event.preventDefault()
+        
+        setLoading(true)
         const latLng = await googleMaps(address)
 
         if (latLng) {
             const id = await searchNearest(latLng)
-            history.push("/produtos?id="+id)
+            if (id) {
+                history.push("/produtos?id="+id)
+            } else {
+                setLoading(false)
+                alert("Endereço não encontrado")
+            }
         }
+
     }
 
     return (
@@ -31,6 +41,7 @@ function InputAddress() {
              value={address}
              onChange={e => setAddress(e.target.value)}
             />
+            <Loader loading={loading} />
         </form>
     )
 }

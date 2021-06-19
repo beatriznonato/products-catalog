@@ -24,10 +24,10 @@ function CategoryCard() {
 
     if (Object.keys(products).length) {
       products.map(product => {
-        const category = product.productVariants[0].subtitle;
+        const category = product.productVariants[0].subtitle
 
         if (!productsObj[category]) {
-          productsObj[category] = [];
+          productsObj[category] = []
         }
   
         productsObj[category].push({
@@ -39,9 +39,9 @@ function CategoryCard() {
       });
     }
 
-    delete productsObj["null"];
+    delete productsObj["null"]
 
-    setFilteredProducts(productsObj);
+    setFilteredProducts(productsObj)
   }, [products]);
 
   if(!products.length) {
@@ -51,7 +51,7 @@ function CategoryCard() {
   return <>
    {
     Object.keys(filteredProducts).map(category => {
-      const arrProducts = filteredProducts[category];
+      const arrProducts = filteredProducts[category]
 
       return (
         <div className="category__container">

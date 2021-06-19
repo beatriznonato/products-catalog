@@ -22,7 +22,7 @@ export const searchNearest = async (latLng) => {
        }
     })
 
-    return response.data.data.pocSearch[0].id
+    return response.data.data.pocSearch[0]?.id 
 }
 
 
