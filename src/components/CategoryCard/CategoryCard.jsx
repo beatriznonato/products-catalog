@@ -42,7 +42,7 @@ function CategoryCard() {
 
     delete productsObj["null"]
 
-    setTimeout(() => setFilteredProducts(productsObj), 1500)
+    setTimeout(() => setFilteredProducts(productsObj), 100)
   }, [products]);
 
   if(!Object.keys(filteredProducts).length) {

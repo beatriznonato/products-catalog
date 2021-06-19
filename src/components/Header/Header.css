@@ -5,6 +5,12 @@
     padding: 12px 12px;
 }
 
+.header__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header__logo {
     width: 100%;
     max-width: 121px;

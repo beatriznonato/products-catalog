@@ -10,7 +10,7 @@ const Header = () => {
 
     return (
         <header className="header__background">
-            <Link to="/">
+            <Link to="/" className="header__link">
                 <img className="header__logo" src="https://courier-images-web.imgix.net/static/img/white-logo.png?auto=compress,format&fit=max&w=undefined&h=undefined&dpr=2&fm=png"/>
             </Link>
             <div>
