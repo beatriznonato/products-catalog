@@ -5,6 +5,7 @@
 <p>
   Develop a platform where the user needs to enter an address within a field and be redirected to a product list page. 
   Therefore, it will be necessary to create 2 simple screens consuming and sending data to Zé's API.
+  This project was developed in react, but it doesn't use create-react-app, but webpack settings.
 </p>
 
 ## Full description of the challenge
@@ -32,6 +33,7 @@ As a user
 ## Pre Requirements :exclamation:
 
 - It is necessary install [Npm](https://docs.npmjs.com/cli/v7/commands/npm-install).
+- This project use node version 16.2.0
 
 ## How to Install
 
@@ -52,6 +54,8 @@ Run the project
 ```sh
  $ npm start
 ```
+
+Is running on http://localhost:8080/.
 
 Run the tests
 
