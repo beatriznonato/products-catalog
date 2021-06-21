@@ -5,7 +5,8 @@
 <p>
   Develop a platform where the user needs to enter an address within a field and be redirected to a product list page. 
   Therefore, it will be necessary to create 2 simple screens consuming and sending data to Zé's API.
-  This project was developed in react, but it doesn't use create-react-app, but webpack settings.
+  
+  This project was developed in react, but it <b>doesn't use create-react-app</b>, but webpack settings.
 </p>
 
 ## Full description of the challenge
@@ -24,11 +25,13 @@ As a user
 #### Screen: Home
 
 - I can see a header and footer
-- I have an entry to enter my full address
+- I have an entry to enter my full address. (Use the following address to find a distributor (PoC): Rua Américo Brasiliense, São Paulo.)
 
 #### Screen: Products page
-- I can see the product cards, with title and price.
+- I can see the product cards, with image, title and price.
 - Button to add or remove the product.
+- Button add to cart
+- Shopping bag
 
 ## Pre Requirements :exclamation:
 
