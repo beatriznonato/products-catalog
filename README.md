@@ -66,6 +66,14 @@ Run the tests
  $ npm test
 ```
 
+### Bonus :star:
+
+Link of the materials I used to make the commit semantically and visually and automatically together with Husky.
+
+- [Standardizing Git confirmation messages](https://www.youtube.com/watch?v=erInHkjxkL8) (vídeo)
+- https://github.com/conventional-changelog/commitlint
+- https://github.com/commitizen/cz-cli
+
 ### License
 
 MIT © Beatriz Nonato :woman_technologist:
